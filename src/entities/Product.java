@@ -26,15 +26,6 @@ public class Product  implements Comparable<Product>{
 		this.price = price;
 	}
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((name == null) ? 0 : name.hashCode());
-		result = prime * result + ((price == null) ? 0 : price.hashCode());
-		return result;
-	}
-
 	
 	@Override
 	public String toString() {
@@ -45,7 +36,5 @@ public class Product  implements Comparable<Product>{
 	public int compareTo(Product other) {
 		return name.toUpperCase().compareTo(other.getName().toUpperCase());
 	}
-	
-	
 	
 }
